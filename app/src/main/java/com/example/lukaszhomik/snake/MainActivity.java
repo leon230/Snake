@@ -165,8 +165,6 @@ public class MainActivity extends Activity {
 
         @Override
         public boolean onTouchEvent(MotionEvent motionEvent) {
-
-
             startActivity(i);
             return true;
         }

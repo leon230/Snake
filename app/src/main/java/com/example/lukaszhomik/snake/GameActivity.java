@@ -45,7 +45,6 @@ public class GameActivity extends Activity {
     int directionOfTravel=0;
     //0 = up, 1 = right, 2 = down, 3= left
 
-
     int screenWidth;
     int screenHeight;
     int topGap;
@@ -128,7 +127,6 @@ public class GameActivity extends Activity {
                 updateGame();
                 drawGame();
                 controlFPS();
-
             }
 
         }
@@ -147,7 +145,7 @@ public class GameActivity extends Activity {
             }
 
             //move the body - starting at the back
-            for(int i=snakeLength; i >0 ; i--){
+            for(int i = snakeLength; i > 0 ; i--){
                 snakeX[i] = snakeX[i-1];
                 snakeY[i] = snakeY[i-1];
             }
